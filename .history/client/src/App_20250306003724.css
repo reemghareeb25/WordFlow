@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+cursor: pointer;
+}
+
+body {
+color: #222;
+}
+
+img {
+max-width: 100%;
+}
+
+main {
+padding: 10px;
+max-width: 960px;
+margin: 0 auto;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+margin-bottom: 50px;
+align-items: center;
+}
+
+header a {
+text-decoration: none;
+color: inherit;
+}
+
+header a.logo {
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+header nav {
+display: flex;
+gap: 24px;
+}
+
+/* Updated Post Styles */
+div.post {
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+margin-bottom: 30px;
+background-color: #ffffff;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+padding: 20px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.post:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+div.post div.image {
+overflow: hidden;
+border-radius: 8px;
+}
+
+div.post div.image img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+transition: transform 0.3s ease;
+}
+
+div.post div.image img:hover {
+transform: scale(1.05);
+}
+
+/* Texts */
+div.post div.texts {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+/* Title */
+div.post div.texts h2 {
+margin: 0;
+font-size: 1.5rem;
+font-weight: bold;
+color: #333;
+line-height: 1.4;
+}
+
+div.post div.texts h2 a {
+text-decoration: none;
+color: inherit;
+}
+
+div.post div.texts h2 a:hover {
+color: #007bff; /* Blue color on hover */
+}
+
+/* Meta Info (Author and Date) */
+div.post p.info {
+margin: 10px 0;
+color: #666;
+font-size: 0.9rem;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+div.post p.info a.author {
+font-weight: bold;
+color: #007bff; /* Blue color for author */
+text-decoration: none;
+}
+
+div.post p.info a.author:hover {
+text-decoration: underline;
+}
+
+div.post p.info time {
+color: #999;
+}
+
+/* Summary */
+div.post p.summary {
+margin: 10px 0;
+color: #444;
+font-size: 1rem;
+line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 700px) {
+div.post {
+    grid-template-columns: 0.9fr 1.1fr;
+}
+}
+
+/* Existing Styles for Other Parts of the Website */
+form.login,
+form.register {
+max-width: 400px;
+margin: 0 auto;
+}
+
+input {
+display: block;
+margin-bottom: 5px;
+width: 100%;
+padding: 5px 7px;
+border: 2px solid #ddd;
+border-radius: 5px;
+background-color: #fff;
+}
+
+button {
+cursor: pointer;
+width: 100%;
+display: block;
+background-color: #555;
+border: 0;
+color: #fff;
+border-radius: 5px;
+padding: 7px 0;
+}
+
+form.login h1,
+form.register h1 {
+text-align: center;
+}
+
+div.post-page div.image {
+max-height: 300px;
+display: flex;
+overflow: hidden;
+}
+
+div.post-page div.image img {
+object-fit: cover;
+object-position: center center;
+width: 100%;
+}
+
+div.post-page a {
+color: #333;
+text-decoration: underline;
+}
+
+div.post-page h1 {
+text-align: center;
+margin: 10px 0 5px;
+}
+
+div.post-page time {
+text-align: center;
+display: block;
+font-size: 1rem;
+color: #aaa;
+margin: 10px 0;
+}
+
+div.post-page div.author {
+text-align: center;
+margin-bottom: 20px;
+font-size: 0.7rem;
+font-weight: bold;
+}
+
+div.content p {
+line-height: 1.7rem;
+margin: 30px 0;
+}
+
+div.content li {
+margin-bottom: 10px;
+}
+
+div.edit-row {
+text-align: center;
+margin-bottom: 20px;
+}
+
+div.post-page a.edit-btn {
+background-color: #333;
+display: inline-flex;
+align-items: center;
+gap: 5px;
+color: #fff;
+padding: 15px 30px;
+border-radius: 5px;
+text-decoration: none;
+}
+
+a svg {
+height: 20px;
+}
