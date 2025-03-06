@@ -1,4 +1,4 @@
-# Blogging Platform
+# WordFlow
 
 This is a full-stack blogging platform that allows users to register, log in, create, edit, delete, and search for blog posts. The backend is built with **Node.js, Express.js, MongoDB**, and **Mongoose**, while the frontend is developed using **React.js**.
 
@@ -41,7 +41,8 @@ cd WordFlow
 
 ### 2. Install Dependencies
 ```sh
-yarn install
+cd client && yarn install
+cd ../server && yarn install
 ```
 
 ### 3. Set Up Environment Variables
