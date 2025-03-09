@@ -92,14 +92,6 @@ yarn client  # Start frontend only
 
 ---
 
-## Deployment
-To deploy the project, you can use:
-- **Frontend**: Vercel / Netlify
-- **Backend**: Render / Railway / Heroku / VPS
-- **Database**: MongoDB Atlas (Cloud MongoDB Service)
-
----
-
 ### 🎯 Future Improvements
 - Implement pagination for blog posts
 - Improve UI/UX with better styling
