@@ -92,7 +92,7 @@ yarn client  # Start frontend only
 
 ---
 
-### 🎯 Future Improvements
+### Future Improvements
 - Implement pagination for blog posts
 - Improve UI/UX with better styling
 - Add comments & likes functionality
@@ -100,5 +100,5 @@ yarn client  # Start frontend only
 
 ---
 
-Happy Coding! 🚀
+
 
